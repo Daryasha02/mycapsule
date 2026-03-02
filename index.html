@@ -408,18 +408,22 @@
     position: fixed;
     top: 0; left: 0; right: 0;
     z-index: 100;
-    padding: 16px 40px;
+    padding: 8px 40px 0px;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     background: rgba(249,245,240,0.94);
     backdrop-filter: blur(8px);
     border-bottom: 1px solid rgba(122,130,102,0.12);
+    overflow: visible;
   }
 
   .site-header img {
-    height: 52px;
+    height: 90px;
     width: auto;
     object-fit: contain;
+    margin-bottom: -20px;
+    position: relative;
+    z-index: 101;
   }
 
   .hero {
@@ -445,14 +449,17 @@
 </header>
 
 <!-- HERO -->
-<section class="hero" style="background-image: url('background.png'); background-repeat: repeat; background-size: auto;">
+<section class="hero" style="background-image: url('background.png'); background-repeat: repeat; background-size: 600px auto;">
   <div class="hero-inner">
     <div class="hero-text">
       <div class="badge">🤖 ИИ-сервис</div>
-      <h1>Умный гардероб для вашего <span>малыша</span></h1>
+      <h1>Умный гардероб для вашего малыша</h1>
       <p class="hero-desc">
         Персонализированная капсула одежды для детей 0–7 лет.<br>
         Учитываем возраст, город, сезон и ваш образ жизни — и за минуты подбираем готовый список вещей с прямыми ссылками на WB и Ozon.
+      </p>
+      <p style="font-size:1.1rem; font-weight:700; color:var(--coral); margin-bottom:32px; animation: fadeUp 0.85s ease both;">
+        Создайте гардероб мечты — начните прямо сейчас!
       </p>
       <a href="https://t.me/MyCapsuleKidsBot" class="cta-btn" id="tg-link">
         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -497,7 +504,7 @@
       <div class="step">
         <div class="step-num">1</div>
         <h3>Отвечаете в боте</h3>
-        <p>Возраст ребёнка, город, сезон, стиль и бюджет — бот задаёт вопросы по одному</p>
+        <p>Возраст ребёнка, город, сезон и стиль — бот задаёт вопросы по одному</p>
       </div>
       <div class="step">
         <div class="step-num">2</div>
