@@ -7,13 +7,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    --cream: #FDF6EE;
+    --cream: #F9F5F0;
     --peach: #F2C4A0;
-    --coral: #E8896A;
-    --dark: #2C1A0E;
-    --brown: #7A4728;
-    --soft: #FAE8D8;
-    --green: #8BAF7C;
+    --coral: #E97451;
+    --dark: #4A4A4A;
+    --brown: #7A8266;
+    --soft: #F2EDE8;
+    --green: #7A8266;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -39,7 +39,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: rgba(253,246,238,0.82);
+    background: rgba(249,245,240,0.80);
     z-index: 0;
   }
 
@@ -54,12 +54,11 @@
   }
 
   .hero-inner {
-    max-width: 1100px;
+    max-width: 800px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     position: relative;
     z-index: 1;
   }
@@ -258,7 +257,7 @@
 
   /* HOW IT WORKS */
   .how-section {
-    background: var(--dark);
+    background: #4A4A4A;
     padding: 100px 40px;
   }
 
@@ -385,7 +384,7 @@
     padding: 32px;
     color: var(--brown);
     font-size: 0.85rem;
-    border-top: 1px solid rgba(122,71,40,0.1);
+    border-top: 1px solid rgba(122,130,102,0.15);
   }
 
   /* ANIMATIONS */
@@ -412,9 +411,9 @@
     padding: 16px 40px;
     display: flex;
     align-items: center;
-    background: rgba(253,246,238,0.92);
+    background: rgba(249,245,240,0.94);
     backdrop-filter: blur(8px);
-    border-bottom: 1px solid rgba(122,71,40,0.08);
+    border-bottom: 1px solid rgba(122,130,102,0.12);
   }
 
   .site-header img {
@@ -461,44 +460,6 @@
         </svg>
         Получить капсулу в Telegram
       </a>
-    </div>
-
-    <div class="hero-visual">
-      <div class="capsule-card">
-        <div class="card-title">🎀 Капсула · Девочка 3 года · Зима</div>
-        <ul class="items-list">
-          <li>
-            <div class="item-icon">🧥</div>
-            <div class="item-info">
-              <div class="item-name">Зимний комбинезон</div>
-              <a href="#" class="item-link">→ Посмотреть на WB</a>
-            </div>
-          </li>
-          <li>
-            <div class="item-icon">👕</div>
-            <div class="item-info">
-              <div class="item-name">Термобельё (комплект)</div>
-              <a href="#" class="item-link">→ Посмотреть на Ozon</a>
-            </div>
-          </li>
-          <li>
-            <div class="item-icon">🧣</div>
-            <div class="item-info">
-              <div class="item-name">Шапка + шарф + варежки</div>
-              <a href="#" class="item-link">→ Посмотреть на WB</a>
-            </div>
-          </li>
-          <li>
-            <div class="item-icon">👗</div>
-            <div class="item-info">
-              <div class="item-name">Флисовый костюм домашний</div>
-              <a href="#" class="item-link">→ Посмотреть на Ozon</a>
-            </div>
-          </li>
-        </ul>
-        <div class="card-tag">✅ Сформировано ИИ за 30 сек</div>
-      </div>
-    </div>
   </div>
 </section>
 
